@@ -1,2 +1,3 @@
-# shortest-path-percolation-implementation
-shortest-path-percolation-implementation
+# Python implementation of the Shortest Path Percolation dynamics
+
+

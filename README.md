@@ -21,7 +21,7 @@ Shortest Path Percolation model: $(a)$ Agent $t$ demands the origin–destinatio
 </p>
 
 
-
+### Definition of the Shortest Path Percolation (SPP) Model
 The Shortest Path Percolation (SPP) model is defined as follows.  
 For $t > 0$, we denote with $G_t = (V, E_t)$, composed of $N = |V|$ nodes and $E_t = |E_t|$ edges, the undirected and unweighted graph available to the agent $t$, and with $o_t \to d_t$ the origin-destination pair demanded by the agent $t$.  
 

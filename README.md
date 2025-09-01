@@ -47,5 +47,5 @@ These assumptions are not reasonable for the study of a real infrastructure and 
 
 For $C = 1$, the SPP model effectively reduces to the ordinary bond-percolation model on ER graphs, displaying a smooth transition when a fraction $p_c = 1 - 1/\bar{k}$ of randomly selected edges is removed from the graph. For $1 < C \leq N$, the SPP model differentiates from the ordinary bond-percolation model as edges in the graph are no longer deleted independently, but rather in a correlated fashion (note that $C = N$ is a limiting case, as the inequality $Q_t \leq C$ always holds as long as $o_t$ and $d_t$ are in the same connected component of the graph $G_t$).  
 
-We explicitly refer to the *infinite-$C$ SPP model* when $\lim_{N \to \infty} C = \infty$; the *finite-* $C$ *SPP model* occurs otherwise.
+We explicitly refer to the *infinite*$-C$ SPP model* when $\lim_{N \to \infty} C = \infty$; the *finite*$-C$ *SPP model* occurs otherwise.
 

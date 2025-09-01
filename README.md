@@ -39,7 +39,7 @@ $$
 E_t \mapsto E_t \setminus \bigcup_{q=1}^{Q_t} (i_q, i_{q+1}),
 $$  
 
-see Fig.~1. If no path exists between $o_t$ and $d_t$ or if $Q_t > C$, no edge is removed from the graph. In either case, we copy the graph $G_{t+1} \mapsto G_t$ and then increase $t \mapsto t + 1$. The process is repeated until no more demand is requested or can be supplied.  
+see Fig 1. If no path exists between $o_t$ and $d_t$ or if $Q_t > C$, no edge is removed from the graph. In either case, we copy the graph $G_{t+1} \mapsto G_t$ and then increase $t \mapsto t + 1$. The process is repeated until no more demand is requested or can be supplied.  
 
 The behavior of the SPP model depends on the structure of the graph $G_1$ and the demand of the agents. Here, for simplicity, we assume that the graph $G_1$ is an instance of the Erdős–Rényi (ER) model with exactly $E_1 = \bar{k}N/2$ edges, with $\bar{k}$ the average degree of the graph. We further assume that the origin-destination nodes $o_t \to d_t$ demanded by the agent $t$ are chosen uniformly at random.  
 

@@ -49,3 +49,7 @@ For $C = 1$, the SPP model effectively reduces to the ordinary bond-percolation 
 
 We explicitly refer to the *infinite*$-C$ *SPP model* when $\lim_{N \to \infty} C = \infty$; the *finite*$-C$ *SPP model* occurs otherwise.
 
+-----
+
+## 🖥️ How to run the scripts
+

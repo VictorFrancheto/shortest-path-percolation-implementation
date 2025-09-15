@@ -80,6 +80,7 @@ python src/main.py 1024 16 2 30 1
  the output files will be saved in the `notebook/data_notebook`;
 - You can analyze, plot or extend results easily from the outputs;
 
-💡Feel free to tweak parameters and explore the rich behavior of SPP!
+💡 Experiment with different parameter settings to better understand how the SPP dynamics respond to changes in network size, connectivity, and cost.
 ---
+
 

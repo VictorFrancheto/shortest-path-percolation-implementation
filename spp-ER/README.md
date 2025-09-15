@@ -81,6 +81,9 @@ python src/main.py 1024 16 2 30 1
 - You can analyze, plot or extend results easily from the outputs;
 
 💡 Experiment with different parameter settings to better understand how the SPP dynamics respond to changes in network size, connectivity, and cost.
----
+
+----
+----
+
 
 

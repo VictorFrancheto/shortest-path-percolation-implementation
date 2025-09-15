@@ -74,9 +74,12 @@ python src/main.py 1024 16 2 30 1
 
 📤 Output Files
 ------------------
-- CSV files are saved for each simulation.
-- Default location: `notebook/data` (or current directory if not present).
-- You can analyze, plot or extend results easily from the outputs.
+- CSV files are saved for each simulation;
+- Default location: `notebook/data` (or current directory if not present);
+- If you choose to run the notebook [`spp-ER.ipynb`](https://github.com/VictorFrancheto/shortest-path-percolation-implementation/tree/main/spp-ER/notebook), the output files will be saved in the `notebook/data_notebook` directory.
+- You can analyze, plot or extend results easily from the outputs;
+- 💡 Tip: Feel free to tweak parameters and explore the rich behavior of SPP!
+
 
 
 

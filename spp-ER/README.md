@@ -6,6 +6,7 @@ The source code is located in the `src/` folder, and execution is done via `main
 ----------------------------------------------------
 📂 Project Structure
 ----------------------------------------------------
+```
 spp-er/
 ├── README.md
 └── src/
@@ -16,6 +17,7 @@ spp-er/
     ├── removal.py
     ├── tree.py
     └── utils.py
+```
 
 ----------------------------------------------------
 ⚙️ Installation
@@ -59,3 +61,4 @@ python src/main.py 1024 16 2 30 1
 - 📝 For each realization, a CSV file is generated automatically.
 - 🧹 After each run, memory is reset to avoid overload.
 - 📂 Example output files are stored in: notebook/data
+

@@ -1,12 +1,11 @@
-# Shortest Path Percolation (SPP-ER)
+# 🔗 Shortest Path Percolation (SPP-ER)
 
-Python implementation of the Shortest Path Percolation model on Erdős–Rényi (ER) networks.  
-The source code is located in the src/ folder, and execution is done via main.py.
+Python implementation of the **Shortest Path Percolation** model on Erdős–Rényi (ER) networks.  
+The source code is located in the `src/` folder, and execution is done via `main.py`.
 
 ----------------------------------------------------
-📂 Structure
+📂 Project Structure
 ----------------------------------------------------
-```
 spp-er/
 ├── README.md
 └── src/
@@ -17,14 +16,17 @@ spp-er/
     ├── removal.py
     ├── tree.py
     └── utils.py
-```
-
 
 ----------------------------------------------------
-▶️ Execution (positional arguments)
+⚙️ Installation
 ----------------------------------------------------
-Run the script with positional arguments in the following order:
+# Requires Python 3.9+ and pip
+pip install -r requirements.txt
 
+----------------------------------------------------
+▶️ How to Run (positional arguments)
+----------------------------------------------------
+# Run the script with the following arguments in order:
 python src/main.py N avg_k C num_iter num_instance
 
 Parameters:
@@ -39,18 +41,21 @@ python src/main.py 4096 8 1 50 1
 python src/main.py 1024 16 2 30 1
 
 ----------------------------------------------------
-🧠 What main.py does (high level)
+🧠 What main.py does
 ----------------------------------------------------
-1. Generates an ER network with N nodes and probability p = avg_k / (N - 1).
-2. Runs the SPP dynamics with cost C for num_iter iterations across num_instance instances.
-3. Saves/displays aggregated metrics (depending on your implementation).
+1. Generates an Erdős–Rényi network with N nodes and probability
+   p = avg_k / (N - 1).
+   In LaTeX:  $p = \frac{\text{avg\_k}}{N - 1}$
+
+2. Runs the Shortest Path Percolation (SPP) dynamics with cost parameter C
+   for num_iter iterations across num_instance runs.
+
+3. Stores aggregated results such as order parameters, averages,
+   and possible critical thresholds.
 
 ----------------------------------------------------
 📜 Notes
 ----------------------------------------------------
-- For each realization, a CSV file is generated.
-- This avoids memory overload, since memory is reset after each run.
-- Example output files are stored in: notebook/data
-
-
-
+- 📝 For each realization, a CSV file is generated automatically.
+- 🧹 After each run, memory is reset to avoid overload.
+- 📂 Example output files are stored in: notebook/data

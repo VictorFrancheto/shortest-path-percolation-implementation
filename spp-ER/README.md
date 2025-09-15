@@ -23,6 +23,13 @@ spp-er/
     └── utils.py       # Utility functions
 ```
 
+📦 **Setup Instructions**
+
+Before running the simulation, make sure to clone the repository and install the required dependencies.
+
+
+
+
 ⚙️ Requirements
 ----------------
 - Python 3.9 or newer
@@ -35,7 +42,7 @@ pip install -r requirements.txt
 
 ▶️ How to Run the Simulation
 ------------------------------
-Run the simulation by executing `main.py` with the following arguments:
+Run the simulation from the terminal by executing the main.py script with the following positional arguments:
 
 ```bash
 python src/main.py N avg_k C num_iter num_instance
@@ -67,5 +74,6 @@ python src/main.py 1024 16 2 30 1
 - CSV files are saved for each simulation.
 - Default location: `notebook/data` (or current directory if not present).
 - You can analyze, plot or extend results easily from the outputs.
+
 
 

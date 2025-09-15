@@ -57,25 +57,26 @@ We explicitly refer to the *infinite*$-C$ *SPP model* when $\lim_{N \to \infty} 
 
 spp-ER/
 │
-├── notebook/                 # notebooks de exploração
+├── notebook/                 # exploration notebooks
+│   ├── plot-ER.ipynb
 │   └── spp-ER.ipynb
 │
 ├── src/
-│   └── spp_er/               # nome do pacote (melhor em snake_case)
-│       ├── __init__.py       # torna o diretório um pacote
-│       ├── main.py           # ponto de entrada
-│       ├── utils.py          # funções auxiliares
-│       ├── bfs.py            # bfs e relacionadas
-│       ├── removal.py        # funções de remoção de pares
-│       ├── tree.py           # funções de árvore e percolação
-│       └── ...               # outros módulos
+│   └── spp_er/               # package name (better in snake_case)
+│       ├── __init__.py       # makes the directory a package
+│       ├── main.py           # entry point
+│       ├── utils.py          # utility functions
+│       ├── bfs.py            # bfs and related functions
+│       ├── removal.py        # pair removal functions
+│       ├── tree.py           # tree and percolation functions
+│       └── network.py        # basic network functions
 │
-├── tests/                    # testes unitários
+├── tests/                    # unit tests
 │   └── test_utils.py
 │
-├── README.md                 # documentação de uso
-├── requirements.txt          # dependências (pandas, numpy, etc.)
-├── setup.py                  # ou pyproject.toml (instalação como lib)
+├── README.md                 # usage documentation
+├── requirements.txt          # dependencies (pandas, numpy, etc.)
+├── setup.py                  # or pyproject.toml (for installation as a library)
 └── .gitignore
 
 

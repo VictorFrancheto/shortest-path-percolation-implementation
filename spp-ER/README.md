@@ -1,17 +1,17 @@
 🔗 Shortest Path Percolation on Erdős–Rényi Networks
 =====================================================
 
-This repository contains simulation code for studying the  Shortest Path Percolation (SPP) process on Erdős–Rényi (ER) random networks. The goal is to explore how the percolation dynamics behave based on:
+This repository contains simulation code for the Shortest Path Percolation (SPP) process on Erdős–Rényi (ER) random networks. The goal is to explore how the percolation dynamics behave based on:
 
-- 🧩 Network size (N)
-- 🔗 Average degree (avg_k)
-- 🎯 Cost parameter (C)
+- 🧩 Network size ($N$)
+- 🔗 Average degree ($avg_k$)
+- 🎯 Cost parameter ($C$)
 
 📁 Project Structure
 --------------------
 ```
 spp-er/
-├── README.md          # Project overview
+├── README.md        
 ├── requirements.txt   # Python dependencies
 └── src/               # Core simulation code
     ├── __init__.py
@@ -43,11 +43,11 @@ python src/main.py N avg_k C num_iter num_instance
 
 | Parameter       | Description                                                | Example |
 |----------------|------------------------------------------------------------|---------|
-| N              | Number of nodes                                            | 4096    |
-| avg_k          | Average degree of the network                              | 8       |
-| C              | Cost parameter for SPP dynamics                            | 1       |
-| num_iter       | Number of iterations per instance                          | 50      |
-| num_instance   | Number of independent network realizations                 | 1       |
+| $N$              | Number of nodes                                            | 4096    |
+| $avg_k$          | Average degree of the network                              | 8       |
+| $C$              | Cost parameter for SPP dynamics                            | 1       |
+| num_iter         | Number of iterations per instance                          | 50      |
+| num_instance     | Number of independent network realizations                 | 1       |
 
 📌 Example
 ```bash
@@ -57,9 +57,9 @@ python src/main.py 1024 16 2 30 1
 
 🔍 What Happens When You Run It?
 ----------------------------------
-1. 📡 Generates an Erdős–Rényi network with `N` nodes.
-2. 🔁 Simulates SPP dynamics with cost parameter `C`, for `num_iter` rounds.
-3. 📊 Aggregates order parameters and metrics.
+1. 📡 Generates an Erdős–Rényi network with $N$ nodes;
+2. 🔁 Simulates SPP dynamics with cost parameter $C$, for `num_iter` rounds;
+3. 📊 Aggregates order parameters and metrics;
 4. 🧼 Frees memory after each instance.
 
 📤 Output Files
@@ -68,4 +68,4 @@ python src/main.py 1024 16 2 30 1
 - Default location: `notebook/data` (or current directory if not present).
 - You can analyze, plot or extend results easily from the outputs.
 
-💡 Tip: Feel free to tweak parameters and explore the rich behavior of SPP!
+

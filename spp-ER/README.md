@@ -3,9 +3,9 @@
 Python implementation of the Shortest Path Percolation model on Erdős–Rényi (ER) networks.  
 The source code is located in the src/ folder, and execution is done via main.py.
 
-====================================================
+----------------------------------------------------
 📂 Structure
-====================================================
+----------------------------------------------------
 spp-er/
 ├── README.md
 └── src/
@@ -17,10 +17,11 @@ spp-er/
     ├── tree.py
     └── utils.py
 
-====================================================
+----------------------------------------------------
 ▶️ Execution (positional arguments)
-====================================================
-# Run it with positional arguments in the following order:
+----------------------------------------------------
+Run the script with positional arguments in the following order:
+
 python src/main.py N avg_k C num_iter num_instance
 
 Parameters:
@@ -34,17 +35,16 @@ Examples:
 python src/main.py 4096 8 1 50 1
 python src/main.py 1024 16 2 30 1
 
-====================================================
+----------------------------------------------------
 🧠 What main.py does (high level)
-====================================================
-1. Generates an ER network with $N$ nodes and probability $p = avg_k / (N - 1)$.
-2. Runs the SPP dynamics with cost $C$ for num_iter iterations across num_instance instances.
+----------------------------------------------------
+1. Generates an ER network with N nodes and probability p = avg_k / (N - 1).
+2. Runs the SPP dynamics with cost C for num_iter iterations across num_instance instances.
 3. Saves/displays aggregated metrics (depending on your implementation).
 
-====================================================
+----------------------------------------------------
 📜 Notes
-====================================================
-- For each realization, a CSV file is generated.  
-- This avoids memory overload, since memory is reset after each run.  
+----------------------------------------------------
+- For each realization, a CSV file is generated.
+- This avoids memory overload, since memory is reset after each run.
 - Example output files are stored in: notebook/data
-

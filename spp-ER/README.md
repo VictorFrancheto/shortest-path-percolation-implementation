@@ -18,6 +18,8 @@ spp-er/
     ├── tree.py
     └── utils.py
 
+
+
 ----------------------------------------------------
 ▶️ Execution (positional arguments)
 ----------------------------------------------------
@@ -49,4 +51,5 @@ python src/main.py 1024 16 2 30 1
 - For each realization, a CSV file is generated.
 - This avoids memory overload, since memory is reset after each run.
 - Example output files are stored in: notebook/data
+
 

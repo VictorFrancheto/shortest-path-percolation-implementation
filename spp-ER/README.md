@@ -18,15 +18,14 @@ spp-er/
     └── utils.py
 ```
 
-----------------------------------------------------
 ⚙️ Installation
-----------------------------------------------------
+
 # Requires Python 3.9+ and pip
 pip install -r requirements.txt
 
-----------------------------------------------------
+
 ▶️ How to Run (positional arguments)
-----------------------------------------------------
+
 # Run the script with the following arguments in order:
 python src/main.py N avg_k C num_iter num_instance
 
@@ -41,9 +40,9 @@ Examples:
 python src/main.py 4096 8 1 50 1
 python src/main.py 1024 16 2 30 1
 
-----------------------------------------------------
+
 🧠 What main.py does
-----------------------------------------------------
+
 1. Generates an Erdős–Rényi network with N nodes and probability
    p = avg_k / (N - 1).
    In LaTeX:  $p = \frac{\text{avg\_k}}{N - 1}$
@@ -54,11 +53,12 @@ python src/main.py 1024 16 2 30 1
 3. Stores aggregated results such as order parameters, averages,
    and possible critical thresholds.
 
-----------------------------------------------------
+
 📜 Notes
-----------------------------------------------------
+
 - 📝 For each realization, a CSV file is generated automatically.
 - 🧹 After each run, memory is reset to avoid overload.
 - 📂 Example output files are stored in: notebook/data
+
 
 

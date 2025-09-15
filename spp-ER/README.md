@@ -10,7 +10,7 @@ This repository contains simulation code for the Shortest Path Percolation (SPP)
 📁 Project Structure
 --------------------
 ```
-spp-er/
+spp-ER/
 ├── README.md        
 ├── requirements.txt   # Python dependencies
 └── src/               # Core simulation code
@@ -29,8 +29,8 @@ Before running the simulation, make sure to clone the repository and install the
 
 ### Clone this repository
 ```
-git clone https://github.com/<your-username>/spp-er.git
-cd spp-er
+git clone https://github.com/<your-username>/spp-ER.git
+cd spp-ER
 ```
 
 ⚙️ Requirements
@@ -77,6 +77,7 @@ python src/main.py 1024 16 2 30 1
 - CSV files are saved for each simulation.
 - Default location: `notebook/data` (or current directory if not present).
 - You can analyze, plot or extend results easily from the outputs.
+
 
 
 

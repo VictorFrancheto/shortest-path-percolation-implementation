@@ -53,6 +53,7 @@ We explicitly refer to the *infinite*$-C$ *SPP model* when $\lim_{N \to \infty} 
 
 ## 🖥️ How to run the scripts
 
+```
 
 spp-ER/
 │

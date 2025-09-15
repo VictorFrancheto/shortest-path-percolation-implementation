@@ -45,8 +45,7 @@ python src/main.py 1024 16 2 30 1
 🧠 What main.py does
 
 1. Generates an Erdős–Rényi network with N nodes and probability
-   p = avg_k / (N - 1).
-   In LaTeX:  $p = \frac{\text{avg\_k}}{N - 1}$
+   $p = \frac{\text{avg\_k}}{N - 1}$
 
 2. Runs the Shortest Path Percolation (SPP) dynamics with cost parameter C
    for num_iter iterations across num_instance runs.
@@ -60,6 +59,7 @@ python src/main.py 1024 16 2 30 1
 - 📝 For each realization, a CSV file is generated automatically.
 - 🧹 After each run, memory is reset to avoid overload.
 - 📂 Example output files are stored in: notebook/data
+
 
 
 

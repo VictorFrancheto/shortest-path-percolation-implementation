@@ -51,7 +51,20 @@ We explicitly refer to the *infinite*$-C$ *SPP model* when $\lim_{N \to \infty} 
 
 -----
 
-## 🖥️ How to run the scripts
+## ⚙️ Project Structure & How to Run
+
+Before getting started, let’s highlight an important point.
+Inside the **`spp-ER`** folder, you will find the Python implementation of the *Shortest Path Percolation* model presented in \[1].
+
+It contains two main subdirectories:
+
+📓 **Notebook** – here you will find examples to generate plots and a monolithic version of the code that runs the full dynamics.
+This folder was created for users who may not be familiar with running code via command line, making it easier to use in environments like Jupyter or Colab.
+
+📂 **src** – this folder contains the modular Python source code.
+To run it, just follow the instructions provided in the **README** file inside the main `spp-ER` directory.
+
+🚩 **Observation:** The folder structure of `spp-ER` is explicitly described below.
 
 ```
 

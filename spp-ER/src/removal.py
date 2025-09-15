@@ -3,6 +3,10 @@
 # PAIR ADJUSTMENT
 ####################################
 
+from  .utils import *
+from .network import *
+from .bfs import *
+
 def adjust_pair(pairs, q):
     """
     void adjust_pair(unsigned long **pairs, unsigned long q)

@@ -2,6 +2,8 @@
 #       BFS AND RELATED FUNCTIONS
 ####################################
 
+from .utils import *
+
 def simple_bfs(C, N, bond, source, target, vec, tmp_vec, visited, reset, dag, nr_sp):
     """
     int simple_bfs(int C, int N, int **bond, int source, int target,

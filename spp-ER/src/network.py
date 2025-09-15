@@ -2,6 +2,8 @@
 #           NETWORK UTILITIES      #
 ####################################
 
+from .utils import *
+
 def find_node(i, j, bond):
     """
     int find_node(int i, int j, int **bond)

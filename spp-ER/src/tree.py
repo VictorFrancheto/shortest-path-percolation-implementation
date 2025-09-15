@@ -2,6 +2,8 @@
 #            TREE FUNCTIONS
 ####################################
 
+from .removal import *
+
 def tree_find_root(n, root, res):
     """
     void tree_find_root(int n, int **root, int *res)

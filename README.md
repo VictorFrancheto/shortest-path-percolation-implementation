@@ -54,7 +54,7 @@ We explicitly refer to the *infinite*$-C$ *SPP model* when $\lim_{N \to \infty} 
 ## ⚙️ Project Structure & How to Run
 
 Before getting started, let’s highlight an important point.
-Inside the **`spp-ER`** folder, you will find the Python implementation of the *Shortest Path Percolation* model presented in \[1].
+Inside the `spp-ER` folder, you will find the Python implementation of the *Shortest Path Percolation* model presented in \[1].
 
 It contains two main subdirectories:
 

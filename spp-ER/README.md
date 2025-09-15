@@ -6,6 +6,7 @@ The source code is located in the src/ folder, and execution is done via main.py
 ----------------------------------------------------
 📂 Structure
 ----------------------------------------------------
+```
 spp-er/
 ├── README.md
 └── src/
@@ -48,3 +49,4 @@ python src/main.py 1024 16 2 30 1
 - For each realization, a CSV file is generated.
 - This avoids memory overload, since memory is reset after each run.
 - Example output files are stored in: notebook/data
+

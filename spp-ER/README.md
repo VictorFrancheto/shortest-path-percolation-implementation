@@ -79,14 +79,6 @@ python src/main.py 1024 16 2 30 1
 - If you choose to run the notebook [`spp-ER.ipynb`](https://github.com/VictorFrancheto/shortest-path-percolation-implementation/blob/main/spp-ER/notebook/plot-ER.ipynb)
  the output files will be saved in the `notebook/data_notebook` directory.
 - You can analyze, plot or extend results easily from the outputs;
-- 💡 Tip: Feel free to tweak parameters and explore the rich behavior of SPP!
 
-
-
-
-
-
-
-
-
-
+💡Feel free to tweak parameters and explore the rich behavior of SPP!
+---

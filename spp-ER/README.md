@@ -28,8 +28,10 @@ spp-er/
 Before running the simulation, make sure to clone the repository and install the required dependencies.
 
 ### Clone this repository
+```
 git clone https://github.com/<your-username>/spp-er.git
 cd spp-er
+```
 
 ⚙️ Requirements
 ----------------
@@ -75,6 +77,7 @@ python src/main.py 1024 16 2 30 1
 - CSV files are saved for each simulation.
 - Default location: `notebook/data` (or current directory if not present).
 - You can analyze, plot or extend results easily from the outputs.
+
 
 
 

@@ -9,14 +9,28 @@ from .bfs import *
 
 def adjust_pair(pairs, q):
     """
-    void adjust_pair(unsigned long **pairs, unsigned long q)
+    Adjust the list of node pairs by removing one entry.
 
-    Adjusts the pair list after one pair has been processed or removed,
-    maintaining the data structure consistent by swapping the last element
-    into the removed position.
+    This function swaps the pair at position q with the last available pair
+    and then decreases the total count, effectively "removing" the chosen pair.
+
+    Parameters
+    ----------
+    pairs : list of lists
+        A 2D structure where:
+        - pairs[0] stores the first node of each pair
+        - pairs[1] stores the second node of each pair
+        - pairs[0][0] keeps track of the current number of pairs.
+    q : int
+        Index of the pair to be removed/adjusted.
+
+    Notes
+    -----
+    - This is a low-level operation adapted from C implementations.
+    - It avoids shifting all elements by swapping with the last one.
     """
     node1 = pairs[0][q]
-    node2 = pairs[0][q]
+    node2 = pairs[1][q]   
 
     pairs[0][q] = pairs[0][pairs[0][0]]
     pairs[1][q] = pairs[1][pairs[0][0]]
@@ -25,6 +39,7 @@ def adjust_pair(pairs, q):
     pairs[1][pairs[0][0]] = node2
 
     pairs[0][0] -= 1
+
 
 
 ####################################

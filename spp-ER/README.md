@@ -31,11 +31,11 @@ pip install -r requirements.txt
 python src/main.py N avg_k C num_iter num_instance
 
 Parameters:
-- N            → number of nodes (e.g., 4096)
-- avg_k        → target average degree of the ER network (e.g., 4)
-- C            → SPP cost/control parameter (e.g., 1, 2, 3, …)
-- num_iter     → number of iterations per instance (e.g., 50)
-- num_instance → number of independent instances (e.g., 1)
+- $N$            → number of nodes (e.g., 4096)
+- $avg_k$        → grau average degree of the ER network (e.g., 4)
+- $C$            → SPP cost/control parameter (e.g., 1, 2, 3, …)
+- num_iter      → number of iterations per instance (e.g., 50)
+- num_instance  → number of independent instances (e.g., 1)
 
 Examples:
 python src/main.py 4096 8 1 50 1
@@ -60,6 +60,7 @@ python src/main.py 1024 16 2 30 1
 - 📝 For each realization, a CSV file is generated automatically.
 - 🧹 After each run, memory is reset to avoid overload.
 - 📂 Example output files are stored in: notebook/data
+
 
 
 

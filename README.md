@@ -53,3 +53,28 @@ We explicitly refer to the *infinite*$-C$ *SPP model* when $\lim_{N \to \infty} 
 
 ## 🖥️ How to run the scripts
 
+
+spp-ER/
+│
+├── notebook/                 # notebooks de exploração
+│   └── spp-ER.ipynb
+│
+├── src/
+│   └── spp_er/               # nome do pacote (melhor em snake_case)
+│       ├── __init__.py       # torna o diretório um pacote
+│       ├── main.py           # ponto de entrada
+│       ├── utils.py          # funções auxiliares
+│       ├── bfs.py            # bfs e relacionadas
+│       ├── removal.py        # funções de remoção de pares
+│       ├── tree.py           # funções de árvore e percolação
+│       └── ...               # outros módulos
+│
+├── tests/                    # testes unitários
+│   └── test_utils.py
+│
+├── README.md                 # documentação de uso
+├── requirements.txt          # dependências (pandas, numpy, etc.)
+├── setup.py                  # ou pyproject.toml (instalação como lib)
+└── .gitignore
+
+

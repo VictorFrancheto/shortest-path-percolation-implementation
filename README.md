@@ -16,7 +16,8 @@ The original **C implementation**, developed by the article’s authors, can be 
 
   - Networks: **fully customizable**; 
   - Targeted attacks: **configurable** ;
-  - Includes: **quantum network implementation** used in the analyses of article [2];  
+  - Includes: **quantum network implementation** used in the analyses of article [2];
+  - Adjustable parameters: network, targeted attack, and the percolation cost $C$. 
   - A detailed step-by-step guide for execution and usage is available in the corresponding *README*.
 
 

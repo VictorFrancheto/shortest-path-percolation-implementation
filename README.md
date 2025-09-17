@@ -22,6 +22,7 @@ The original **C implementation**, developed by the article’s authors, can be 
 ## 📖 Reference
 
 [1] [Minsuk Kim and Filippo Radicchi. *Shortest-path percolation on random networks*. **Physical Review Letters**, 133(4), July 2024.](https://arxiv.org/pdf/2402.06753)
+[2] 
 
 ---
 

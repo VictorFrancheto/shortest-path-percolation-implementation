@@ -6,6 +6,18 @@ The goal is to offer an accessible and extensible version of the model, while ke
 The original **C implementation**, developed by the article’s authors, can be found here:  
 👉 [Shortest Path Percolation in C](https://github.com/danielhankim/shortest-path-percolation)
 
+### 📂 Implementations
+
+- 📌 The [spp-ER](https://github.com/VictorFrancheto/shortest-path-percolation-implementation/tree/main/spp-ER) folder contains the **Python implementation** of the *Shortest Path Percolation* dynamics introduced in [1], along with all the instructions required to run the model.  
+  - Network considered: **random (fixed)**  
+  - Adjustable parameters: network size, average degree, and the percolation cost $C$  
+
+- ⚙️ The [spp-general](https://github.com/VictorFrancheto/shortest-path-percolation-implementation/tree/main/spp-general) folder provides a more **general and flexible** version of the percolation model.  
+  - Networks: **fully customizable**  
+  - Targeted attacks: **configurable**  
+  - Includes: **quantum network implementation** used in the analyses of article [2]  
+  - A detailed step-by-step guide for execution and usage is available in the corresponding *README*  
+
 
 ## 📖 Reference
 

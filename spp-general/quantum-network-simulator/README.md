@@ -1,6 +1,8 @@
-## Dynamics of the Quantum Internet Network
+# 🌐 Dynamics of the Quantum Internet Network
 
-## Step 1 – Fiber-Optics Network Simulation
+---
+
+## 🌀 Step 1 – Fiber-Optics Network Simulation
 
 We begin by uniformly distributing $N$ nodes within a disk of radius $R$. To model how optical fibers connect these nodes, we use the **Waxman model**. In this model, each pair of nodes $i$ and $j$ is connected by a fiber with probability:
 
@@ -12,7 +14,7 @@ where $d_{ij}$ is the Euclidean distance between nodes $i$ and $j$, $L$ is the m
 
 ---
 
-## Step 2 – Photonic Network Simulation
+## 🔴 Step 2 – Photonic Network Simulation
 
 Once the fiber-optics network is constructed, we simulate the transmission of photons through it. Photonic losses are known to grow exponentially with fiber length. More precisely, the **transmissivity** — i.e., the fraction of energy received at the output of a fiber link connecting nodes $i$ and $j$ — is given by:
 
@@ -27,9 +29,3 @@ Finally, we define the probability $P_{ij}$ that two nodes are effectively conne
 $$
 P_{ij} = 1 - (1 - p_{ij})^{n_p}
 $$
-
-
-
-
-
-

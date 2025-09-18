@@ -47,7 +47,8 @@ This cluster, denoted by $N_G$, represents the number of nodes that remain mutua
 # 🌐 Quantum Network Simulator
 
 Simulator for **quantum photonic networks** using **Waxman random graphs**.  
-This project generates fiber networks, simulates photonic survival of links, and visualizes the resulting network.
+The project creates fiber networks, simulates the maintenance of photonic links, and presents the visualization of the resulting network.
+
 
 ---
 
@@ -147,6 +148,7 @@ python main.py -N 3000 --g 0.2 -o network.png
 </p>
 
 The grey edges represent the fiber-optic network generated in the *Fiber-optics network simulation* step. The red edges show the photonic links established during the construction of the *Photonic network*. Greener (bluer) nodes are more (less) connected, following a Poisson distribution. The $N_G$ refers to the number of nodes belonging to the largest connected component, and the largest component contains $100$% of the nodes.
+
 
 
 

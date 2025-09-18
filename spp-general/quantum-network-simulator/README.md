@@ -30,3 +30,27 @@ $$
 P_{ij} = 1 - (1 - p_{ij})^{n_p}
 $$
 
+
+
+# 🌐 Quantum Network Simulator
+
+Simulator for **quantum photonic networks** using **Waxman random graphs**.  
+This project generates fiber networks, simulates photonic survival of links, and visualizes the resulting network.
+
+---
+
+## 📂 Project Structure
+
+```
+quantum-network-simulator/
+├── README.md
+├── requirements.txt
+├── main.py                   # CLI entry point
+├── simulator.py              # Core simulator class
+└── quantum_network/
+    ├── __init__.py
+    ├── cli.py
+    └── utils.py
+```
+
+

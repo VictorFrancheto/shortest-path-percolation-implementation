@@ -22,10 +22,11 @@ $$
 p_{ij} = 10^{-\gamma d_{ij}/10}
 $$
 
-where $d_{ij}$ (in kilometers) is the Euclidean distance between the nodes, and $\gamma$ is the fiber loss coefficient, which depends on the photon wavelength. For instance, in silica fibers, losses are minimized at a wavelength of 1550 nm, resulting in $\gamma \approx 0.2$ dB/km, a value we use in our simulations. Even with technological advances, the physical loss limit of silica fibers is estimated to lie between 0.095 and 0.13 dB/km.
+where $d_{ij}$ (in kilometers) is the Euclidean distance between the nodes, and $\gamma$ is the fiber loss coefficient, which depends on the photon wavelength. For instance, in silica fibers, losses are minimized at a wavelength of $1550$ nm, resulting in $\gamma \approx 0.2$ dB/km, a value we use in our simulations. Even with technological advances, the physical loss limit of silica fibers is estimated to lie between 0.095 and 0.13 dB/km.
 
 Finally, we define the probability $P_{ij}$ that two nodes are effectively connected by a photonic link as:
 
 $$
 P_{ij} = 1 - (1 - p_{ij})^{n_p}
 $$
+

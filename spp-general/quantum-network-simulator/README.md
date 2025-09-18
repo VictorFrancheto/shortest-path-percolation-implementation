@@ -128,9 +128,11 @@ python main.py -N 2000 --b 0.5 --A_value 1e5 -o custom.png
 python main.py -N 3000 --g 0.2 -o network.png
 ```
 
+
 <p align="center">
-  <img src="https://github.com/VictorFrancheto/shortest-path-percolation-implementation/spp-general/quantum-network-simulator/blob/main/network.PNG">
+  <img src="https://raw.githubusercontent.com/VictorFrancheto/shortest-path-percolation-implementation/main/spp-general/quantum-network-simulator/network.png">
 </p>
+
 
 
 

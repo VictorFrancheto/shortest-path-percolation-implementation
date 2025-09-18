@@ -123,53 +123,10 @@ python main.py -N 1500 --np_photons 2000 -o photons.png
 python main.py -N 2000 --b 0.5 --A_value 1e5 -o custom.png
 ```
 
----
-
-## 🧩 Dynamics of the Quantum Internet Network
-
-### Step 1 – Fiber-Optics Network Simulation
-
-Nodes are uniformly distributed in a disk of radius $R$. Edges are drawn according to the **Waxman model**:
-
-$$
-\Pi_{ij} = \beta e^{-d_{ij}/\alpha L}
-$$
-
-where $d_{ij}$ is the Euclidean distance between nodes, $L$ is the maximum pairwise distance, $\alpha$ controls edge length, and $\beta$ determines average connectivity.
-
----
-
-### Step 2 – Photonic Network Simulation
-
-Photon transmissivity along a fiber link is:
-
-$$
-p_{ij} = 10^{-\gamma d_{ij}/10}
-$$
-
-where $\gamma$ is the fiber loss coefficient. The probability that a link survives with $n_p$ photons is:
-
-$$
-P_{ij} = 1 - (1 - p_{ij})^{n_p}
-$$
-
----
-
-### Step 3 – Largest Cluster Analysis
-
-The simulator computes the fraction of nodes in the **largest connected component**:
-
-$$
-\frac{N_G}{N}
-$$
-
-This fraction is reported in the plots, indicating the network connectivity after photon losses.
-
----
-
 ## 📜 License
 
 MIT License © 2025
+
 
 
 

@@ -130,8 +130,10 @@ python main.py -N 3000 --g 0.2 -o network.png
 
 
 <p align="center">
-  <img src="network.png" alt="Quantum Network">
+  <img src="network.png" alt="Quantum Network" height="300">
 </p>
+
+
 
 
 

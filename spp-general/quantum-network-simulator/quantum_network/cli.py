@@ -1,4 +1,5 @@
 import argparse
+import matplotlib.pyplot as plt
 from .simulator import QuantumNetworkSimulator
 
 
@@ -21,11 +22,8 @@ def main():
         A_value=args.A_value
     )
 
-    fiber_net, nodes = simulator.generate_waxman_graph(args.N)
-    photonic_net = simulator.generate_photonic_network(fiber_net)
-    ng_over_n = simulator.calculate_largest_cluster_size(photonic_net) / args.N
-
-    simulator.plot_combined(nodes, fiber_net, photonic_net, args.N, ng_over_n, args.output)
+    # Executa a simulação única com os parâmetros passados
+    simulator.run_single_simulation(N=args.N, label="a", filename=args.output)
 
 
 if __name__ == "__main__":

@@ -1,5 +1,12 @@
 # 🌐 Dynamics of the Quantum Internet Network
 
+The network model used was proposed by [1], with the purpose of simulating the structure of the quantum internet.
+
+## 📖 Reference
+
+[1] [Samuraí Brito, Askery Canabarro, Rafael Chaves, and Daniel Cavalcanti. *Statistical properties of the quantum internet*. **Physical Review Letters**, 124(21), May 2020.](https://arxiv.org/pdf/1911.05445)
+
+
 ---
 
 ## 🧩 Step 1 – Fiber-Optics Network Simulation
@@ -141,6 +148,7 @@ python main.py -N 3000 --g 0.2 -o network.png
 </p>
 
 The grey edges represent the fiber-optic network generated in the *Fiber-optics network simulation* step. The red edges show the photonic links established during the construction of the *Photonic network*. Greener (bluer) nodes are more (less) connected, following a Poisson distribution. The $N_G$ refers to the number of nodes belonging to the largest connected component, and the largest component contains $100$ % of the nodes.
+
 
 
 

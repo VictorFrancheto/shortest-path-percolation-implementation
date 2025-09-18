@@ -53,4 +53,12 @@ quantum-network-simulator/
     └── utils.py
 ```
 
+## 📦 Installation
+
+1. Clone this repository:
+```bash
+git clone https://github.com/yourusername/quantum-network-simulator.git
+cd quantum-network-simulator
+```
+
 

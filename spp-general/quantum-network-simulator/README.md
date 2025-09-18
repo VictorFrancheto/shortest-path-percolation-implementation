@@ -126,6 +126,9 @@ python main.py -N 2000 --b 0.5 --A_value 1e5 -o custom.png
 4. **Plot simulation results**  
 ```bash
 python main.py -N 3000 --g 0.2 -o network.png
+```
+
+
 
 
 

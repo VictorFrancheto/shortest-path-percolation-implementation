@@ -30,7 +30,7 @@ $$
 P_{ij} = 1 - (1 - p_{ij})^{n_p}
 $$
 
-# 🧩 Step 3 – Largest Cluster Analysis
+## 🧩 Step 3 – Largest Cluster Analysis
 
 After building the photonic network, we focus on the size of the largest connected component (or *giant cluster*).  
 This cluster, denoted by $N_G$, represents the number of nodes that remain mutually reachable within the network.  
@@ -139,6 +139,7 @@ python main.py -N 3000 --g 0.2 -o network.png
 </p>
 
 The grey edges represent the fiber-optic network generated in the *Fiber-optics network simulation* step. The red edges show the photonic links established during the construction of the *Photonic network*. Greener (bluer) nodes are more (less) connected, following a Poisson distribution. The $N_G$ refers to the number of nodes belonging to the largest connected component, and the largest component contains $100$ % of the nodes.
+
 
 
 

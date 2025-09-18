@@ -133,6 +133,7 @@ python main.py -N 3000 --g 0.2 -o network.png
   <img src="network.png" alt="Quantum Network" height="300">
 </p>
 
+The grey edges represent the fiber-optic network generated in the \textit{Fiber-optics network simulation} step. The red edges show the photonic links established during the construction of the \textit{Photonic network}. Greener (bluer) nodes are more (less) connected, following a Poisson distribution. $N_G$ refers to the number of nodes belonging to the largest connected component, and $N$ is the total number of nodes. The figures consider $R = 1800$ km (approximately corresponding to the area of the US), and the largest component contains $100\%$ of the nodes.
 
 
 

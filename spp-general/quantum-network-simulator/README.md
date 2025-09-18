@@ -73,6 +73,105 @@ source .venv/bin/activate   # Linux/Mac
 pip install -r requirements.txt
 ```
 
+---
+
+## ▶️ Execution (CLI)
+
+You can run the simulator directly from the command line.
+
+### Basic example
+```bash
+python main.py -N 1000 --g 0.2 -o rede.png
+```
+
+This generates a quantum network with:
+- **1000 nodes**  
+- **attenuation factor** `g = 0.2`  
+- output saved to `rede.png`
+
+---
+
+## ⚙️ Parameters
+
+| Argument        | Default      | Description |
+|-----------------|-------------:|-------------|
+| `-N`            | `500`        | Number of nodes in the network |
+| `--R`           | `1800`       | Radius of the area |
+| `--aL`          | `226`        | Characteristic length scale |
+| `--b`           | `1.0`        | Scaling factor for edge probability |
+| `--g`           | `0.2`        | Attenuation factor |
+| `--np_photons`  | `1000`       | Number of photons |
+| `--A_value`     | `5.2e4`      | Parameter for node coloring |
+| `-o`, `--output`| `quantum_network.png` | Output filename |
+
+---
+
+## 📊 Examples
+
+1. **Generate a larger network**  
+```bash
+python main.py -N 5000 --R 2500 -o big_network.png
+```
+
+2. **Increase photon number**  
+```bash
+python main.py -N 1500 --np_photons 2000 -o photons.png
+```
+
+3. **Modify edge probability scaling**  
+```bash
+python main.py -N 2000 --b 0.5 --A_value 1e5 -o custom.png
+```
+
+---
+
+## 🧩 Dynamics of the Quantum Internet Network
+
+### Step 1 – Fiber-Optics Network Simulation
+
+Nodes are uniformly distributed in a disk of radius $R$. Edges are drawn according to the **Waxman model**:
+
+$$
+\Pi_{ij} = \beta e^{-d_{ij}/\alpha L}
+$$
+
+where $d_{ij}$ is the Euclidean distance between nodes, $L$ is the maximum pairwise distance, $\alpha$ controls edge length, and $\beta$ determines average connectivity.
+
+---
+
+### Step 2 – Photonic Network Simulation
+
+Photon transmissivity along a fiber link is:
+
+$$
+p_{ij} = 10^{-\gamma d_{ij}/10}
+$$
+
+where $\gamma$ is the fiber loss coefficient. The probability that a link survives with $n_p$ photons is:
+
+$$
+P_{ij} = 1 - (1 - p_{ij})^{n_p}
+$$
+
+---
+
+### Step 3 – Largest Cluster Analysis
+
+The simulator computes the fraction of nodes in the **largest connected component**:
+
+$$
+\frac{N_G}{N}
+$$
+
+This fraction is reported in the plots, indicating the network connectivity after photon losses.
+
+---
+
+## 📜 License
+
+MIT License © 2025
+
+
 
 
 

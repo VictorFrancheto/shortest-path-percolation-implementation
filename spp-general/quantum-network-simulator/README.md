@@ -105,16 +105,17 @@ This generates a quantum network with:
 
 ## ⚙️ Parameters
 
-| Argument        | Default      | Description |
-|-----------------|-------------:|-------------|
-| `-N`            | `500`        | Number of nodes in the network |
-| `--R`           | `1800`       | Radius of the area |
-| `--aL`          | `226`        | Characteristic length scale |
-| `--b`           | `1.0`        | Scaling factor for edge probability |
-| `--g`           | `0.2`        | Attenuation factor |
-| `--np_photons`  | `1000`       | Number of photons |
-| `--A_value`     | `5.2e4`      | Parameter for node coloring |
-| `-o`, `--output`| `quantum_network.png` | Output filename |
+| Parameters                | Default               | Description                                                                 |
+|------------------|----------------------|-----------------------------------------------------------------------------|
+| `-N`             | `500`                | Number of nodes in the network                                              |
+| `--R`            | `1800`               | Disk radius (km) where the nodes are uniformly distributed                  |
+| `--aL`           | `226`                | Characteristic length scale $\alpha L$ for the Waxman model                 |
+| `--b`            | `1.0`                | Parameter $\beta$ controlling the average degree of the network             |
+| `--g`            | `0.2`                | Attenuation factor $\gamma$ (fiber loss coefficient, in dB/km)              |
+| `--np_photons`   | `1000`               | Number of photons $n_p$ used to establish photonic links                    |
+| `--A_value`      | `5.2e4`              | Scaling parameter for node coloring in the visualization                    |
+| `-o`, `--output` | `quantum_network.png`| Output filename for the generated network plot                              |
+
 
 ---
 
@@ -146,6 +147,7 @@ python main.py -N 3000 --g 0.2 -o network.png
 </p>
 
 The grey edges represent the fiber-optic network generated in the *Fiber-optics network simulation* step. The red edges show the photonic links established during the construction of the *Photonic network*. Greener (bluer) nodes are more (less) connected, following a Poisson distribution. The $N_G$ refers to the number of nodes belonging to the largest connected component, and the largest component contains $100$ % of the nodes.
+
 
 
 

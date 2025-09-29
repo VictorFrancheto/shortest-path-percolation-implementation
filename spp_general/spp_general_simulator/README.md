@@ -31,9 +31,7 @@ spp_general/
 │   ├── utils.py              # Helper functions (copying networks, cleaning timestamps, etc.)
 │   ├── network-save/         # Sample networks stored as edge list text files
 │   ├── er1500-graph.txt      # Erdős–Rényi graph with N=1500 nodes (edge list format)
-|
-└── spp-general-notebook/     # Jupyter notebooks for analysis, plotting and experiments
-    └── data_simulator/       # Simulation outputs (CSV results grouped by N, C, and attack mode)
+
 
 ```
 

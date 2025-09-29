@@ -1,29 +1,38 @@
 # 🔗 Shortest Path Percolation – General Simulator
-=================================================
 
 This repository contains simulation code for the **Shortest Path Percolation (SPP)** process on general networks. The goal is to explore percolation dynamics under different attack strategies and parameters:
 
 - 🧩 Network size ($N$)  
 - 🎯 Path-length cost parameter ($C$)  
-- ⚡ Attack modes (random, hub, closeness, betweenness)  
+- ⚡ Attack modes (random, hub, closeness, betweenness and DomiRank)  
 
 📁 Project Structure
 --------------------
 ```
 spp_general/
-├── README.md                 # Project documentation
-├── requirements.txt          # Python dependencies
-├── .gitignore                # Ignored files
+├── README.md                 # Project documentation and usage instructions
+├── requirements.txt          # Python dependencies required to run the project
+├── .gitignore                # Files and folders ignored by Git
+│
 ├── spp_general_simulator/    # Core simulation package
-│   ├── cli/                  # Command line interface
-│   ├── attacks.py            # Pair-removal attack logic
-│   ├── clusters.py           # Component reconstruction (NZ algorithm)
-│   ├── io.py                 # Network I/O (edge list loading)
-│   ├── rng.py                # Random number generator
-│   ├── utils.py              # Helpers and utilities
-│   └── ...
-└── spp-general-notebook/     # Jupyter notebooks & results
-    └── data_simulator/       # Simulation outputs
+│   ├── cli/                  # Command Line Interface (entry points for running simulations)
+│   ├── main.py               # Main entry script for running simulations directly
+│   ├── core/                 # Core classes and orchestrators for simulation pipeline
+│   ├── attacks.py            # Pair-removal attack logic and attack strategies
+│   ├── bfs.py                # Breadth-First Search utilities for path exploration
+│   ├── clusters.py           # Component reconstruction using the modified NZ algorithm
+│   ├── distributions.py      # Degree, distance and statistical distributions for analysis
+│   ├── io.py                 # Network I/O (load/save from/to .txt, CSV, edge lists)
+│   ├── pairs.py              # Pair generation and enumeration within distance C
+│   ├── rng.py                # Random number generator (Mersenne Twister 64-bit)
+│   ├── selectors.py          # Node/edge selection strategies (hub, closeness, betweenness, random...)
+│   ├── simulator.py          # High-level simulator orchestrating multiple iterations
+│   ├── unionfind.py          # Union-Find / Disjoint Set structure for component tracking
+│   ├── utils.py              # Helper functions (copying networks, cleaning timestamps, etc.)
+│
+└── spp-general-notebook/     # Jupyter notebooks for analysis, plotting and experiments
+    └── data_simulator/       # Simulation outputs (CSV results grouped by N, C, and attack mode)
+
 ```
 
 📦 Setup Instructions

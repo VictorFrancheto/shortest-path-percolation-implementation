@@ -10,11 +10,14 @@ This repository contains simulation code for the **Shortest Path Percolation (SP
 --------------------
 ```
 spp_general/
-├── README.md                 # Project documentation and usage instructions
-├── requirements.txt          # Python dependencies required to run the project
-├── .gitignore                # Files and folders ignored by Git
+├── .
+├── .
+├── .
 │
 ├── spp_general_simulator/    # Core simulation package
+├──  README.md                 # Project documentation and usage instructions
+├── requirements.txt          # Python dependencies required to run the project
+├── .gitignore                # Files and folders ignored by Git
 │   ├── cli/                  # Command Line Interface (entry points for running simulations)
 │   ├── main.py               # Main entry script for running simulations directly
 │   ├── core/                 # Core classes and orchestrators for simulation pipeline

@@ -15,9 +15,6 @@ spp_general/
 ├── .
 │
 ├── spp_general_simulator/    # Core simulation package
-├──  README.md                 # Project documentation and usage instructions
-├── requirements.txt          # Python dependencies required to run the project
-├── .gitignore                # Files and folders ignored by Git
 │   ├── cli/                  # Command Line Interface (entry points for running simulations)
 │   ├── main.py               # Main entry script for running simulations directly
 │   ├── core/                 # Core classes and orchestrators for simulation pipeline
@@ -32,8 +29,10 @@ spp_general/
 │   ├── simulator.py          # High-level simulator orchestrating multiple iterations
 │   ├── unionfind.py          # Union-Find / Disjoint Set structure for component tracking
 │   ├── utils.py              # Helper functions (copying networks, cleaning timestamps, etc.)
-│   ├── network-save/         # Sample networks stored as edge list text files
+│
+├── network-save/             # Sample networks stored as edge list text files
 │   ├── er1500-graph.txt      # Erdős–Rényi graph with N=1500 nodes (edge list format)
+
 
 
 ```

@@ -9,7 +9,7 @@ The original **C implementation**, developed by the article’s authors, can be 
 ### 📂 Implementations
 
 - 📌 The [spp-ER](https://github.com/VictorFrancheto/shortest-path-percolation-implementation/tree/main/spp-ER) folder contains the **Python implementation** of the *Shortest Path Percolation* dynamics introduced in [1], along with all the instructions required to run the model.  
-  - Network considered: **random (fixed)**;
+  - Network considered: Erdős–Rényi (fixed);
   - Adjustable parameters: network size, average degree, and the percolation cost $C$. 
 
 - ⚙️ The [spp_general](https://github.com/VictorFrancheto/shortest-path-percolation-implementation/tree/main/spp_general) folder provides a more general and flexible version of the percolation model, and the results obtained from this dynamics and the corresponding attacks are presented in [2].

@@ -34,8 +34,8 @@ The original implementation of the Shortest Path Percolation was developed in **
 
 ## ▶️ How to Use
 
-1. Open the `spp-ER.ipynb` notebook.  
-2. Set the network parameters (number of nodes, average degree, etc.) and the **C** parameter.  
+1. Open the `spp-ER.ipynb` notebook;
+2. Set the network parameters (number of nodes, average degree, etc.) and the **$C$** parameter; 
 3. Run the cells to execute the dynamics and visualize the results.  
 
 ---

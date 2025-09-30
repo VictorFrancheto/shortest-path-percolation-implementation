@@ -10,27 +10,41 @@ This repository contains simulation code for the **Shortest Path Percolation (SP
 --------------------
 ```
 spp_general/
-├── .
-├── .
-├── .
+├── spp_general_simulator/       # Core simulation package
+│   ├── cli/                     # Command Line Interface (entry points for running simulations)
+│   │   └── main.py              # Main script to run simulations directly
+│   │
+│   ├── core/                    # Core classes and orchestrators for the simulation pipeline
+│   │   ├── attacks.py           # Pair-removal attack logic and attack strategies
+│   │   ├── bfs.py               # Breadth-First Search utilities for path exploration
+│   │   ├── clusters.py          # Component reconstruction using the modified NZ algorithm
+│   │   ├── distributions.py     # Degree, distance and statistical distributions for analysis
+│   │   ├── io.py                # Network I/O (load/save from/to .txt, CSV, edge lists)
+│   │   ├── pairs.py             # Pair generation and enumeration within distance C
+│   │   ├── rng.py               # Random number generator (Mersenne Twister 64-bit)
+│   │   ├── selectors.py         # Node/edge selection strategies (hub, closeness, betweenness, random…)
+│   │   ├── simulator.py         # High-level simulator orchestrating multiple iterations
+│   │   ├── unionfind.py         # Union-Find / Disjoint Set structure for component tracking
+│   │   └── utils.py             # Helper functions (copying networks, cleaning timestamps, etc.)
+│   │
+│   ├── network-save/            # Sample networks stored as edge list text files
+│   │   └── er1500-graph.txt     # Erdős–Rényi graph with N=1500 nodes
+│   │
+│   ├── __init__.py
+│   ├── README.md
+│   └── requirements.txt
 │
-├── spp_general_simulator/    # Core simulation package
-│   ├── cli/                  # Command Line Interface (entry points for running simulations)
-│   ├── main.py               # Main entry script for running simulations directly
-│   ├── core/                 # Core classes and orchestrators for simulation pipeline
-│   ├── attacks.py            # Pair-removal attack logic and attack strategies
-│   ├── bfs.py                # Breadth-First Search utilities for path exploration
-│   ├── clusters.py           # Component reconstruction using the modified NZ algorithm
-│   ├── distributions.py      # Degree, distance and statistical distributions for analysis
-│   ├── io.py                 # Network I/O (load/save from/to .txt, CSV, edge lists)
-│   ├── pairs.py              # Pair generation and enumeration within distance C
-│   ├── rng.py                # Random number generator (Mersenne Twister 64-bit)
-│   ├── selectors.py          # Node/edge selection strategies (hub, closeness, betweenness, random...)
-│   ├── simulator.py          # High-level simulator orchestrating multiple iterations
-│   ├── unionfind.py          # Union-Find / Disjoint Set structure for component tracking
-│   ├── utils.py              # Helper functions (copying networks, cleaning timestamps, etc.)
-│   ├── network-save/         # Sample networks stored as edge list text files
-│   ├── er1500-graph.txt      # Erdős–Rényi graph with N=1500 nodes (edge list format)
+├── spp-general-notebook/        # Jupyter notebooks for analysis and visualization
+│   ├── __init__.py
+│   ├── README.md
+│   └── requirements.txt
+│
+├── spp-ER/                      # Specialized ER percolation simulator
+│   └── README.md
+│
+├── README.md                    # Root project documentation
+├── requirements.txt             # Global dependencies (if needed)
+└── spp_diagram.png              # Diagram of the project/simulator
 
 
 
@@ -71,10 +85,8 @@ pip install -r requirements.txt
 Run simulations through the CLI:
 
 ```bash
-python -m spp_general.spp_general_simulator.cli.main \
-  --input_txt spp_general/spp_general_simulator/network-save/er1500-graph.txt \
-  --attack random random \
-  --iter 100
+python -m spp_general_simulator.cli.main --input_txt spp_general_simulator/network-save/er1500-graph.txt --attack random random --iter 10
+
 ```
 
 | Parameter       | Description                                                  | Example |

@@ -1,6 +1,7 @@
 import argparse
 import sys, os
-from ..core.simulator import main as run_simulation
+#from core.simulator import main as run_simulation
+from spp_general_simulator.core.simulator import main as run_simulation
 
 
 def parse_args():
@@ -11,7 +12,7 @@ def parse_args():
                    choices=["random", "hub", "closeness", "betweenness"])
     p.add_argument("--iter", type=int, default=1000)
     p.add_argument("--num_instance", type=int, default=1)
-    p.add_argument("--output_dir", type=str, default="./spp_general/spp-general-notebook/data_simulator")
+    p.add_argument("--output_dir", type=str, default="./spp-general-notebook/data_simulator")
     p.add_argument("--C_values", nargs="+", default=None)  # aceita 'N'
     p.add_argument("--N_values", nargs="+", type=int, default=[300, 500, 600, 1000])
     p.add_argument("--rank_1", type=int, default=1)

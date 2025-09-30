@@ -40,7 +40,7 @@ Shortest Path Percolation model: **$(a)$** There are two possible shortest paths
 
 ### Definition of the Shortest Path Percolation (SPP) Model on Erdős–Rényi Networks
 The Shortest Path Percolation (SPP) model is defined as follows.  
-For $t > 0$, we denote with $G_t = (V, 𝓔_t)$, composed of $N = |V|$ nodes and $E_t = |𝓔_t|$ edges, the undirected and unweighted graph available to the agent $t$, and with $o_t \to d_t$ the origin-destination pair demanded by the agent $t$.  
+For $t > 0$, we denote with $G_t = (V, 𝓔_t)$, composed of $N = |V|$ nodes and $E_t = |𝓔_t|$ edges, the undirected and unweighted graph available to the agent $t$, and with $o_t \to d_t$ the origin and destination pair demanded by the agent $t$.  
 
 If at least a path between $o_t$ and $d_t$ exists in $G_t$, we denote with $Q_t$ the length of the shortest one(s). The demand of the agent $t$ can be supplied only if $d_t$ is reachable from $o_t$ and $Q_t \leq C$, where $C > 0$ is a tunable parameter of the model.  
 
@@ -53,7 +53,7 @@ $$
 all edges in the path are removed from $G_t$, i.e.,  
 
 $$
-E_t \mapsto E_t \setminus \bigcup_{q=1}^{Q_t} (i_q, i_{q+1}),
+𝓔_t \mapsto 𝓔_t \setminus \bigcup_{q=1}^{Q_t} (i_q, i_{q+1}),
 $$  
 
 see the figure above. If no path exists between $o_t$ and $d_t$ or if $Q_t > C$, no edge is removed from the graph. In either case, we copy the graph $G_{t+1} \mapsto G_t$ and then increase $t \mapsto t + 1$. The process is repeated until no more demand is requested or can be supplied.  

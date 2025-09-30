@@ -28,8 +28,7 @@ This notebook was designed for:
 
 ## 🔗 Original C Implementation
 
-The original implementation of the Shortest Path Percolation was developed in **C** and can be accessed here:  
-[Implementation in C](https://github.com/danielhankim/shortest-path-percolation)
+The original implementation of the Shortest Path Percolation was developed in **C** and can be accessed here: [Implementation in C](https://github.com/danielhankim/shortest-path-percolation)
 
 ---
 

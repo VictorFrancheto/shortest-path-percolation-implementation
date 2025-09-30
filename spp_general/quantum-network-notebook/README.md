@@ -15,8 +15,9 @@ The output is displayed as a $2x3$ grid of subplots $(a, b, c, d, e, f)$, and sa
 ✅ In summary: this notebook **implements the dynamics of quantum photonic networks** and **produces six comparative visualizations** with different numbers of nodes.  
 
 <p align="center">
-  <img src="https://github.com/VictorFrancheto/spp_general/quantum-network-notebook/blob/main/quantum_networks.png">
+  <img src="https://github.com/VictorFrancheto/shortest-path-percolation-implementation/spp_general/quantum-network-notebook/blob/main/quantum_networks.png">
 </p>
+
 
 
 

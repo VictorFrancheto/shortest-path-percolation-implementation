@@ -82,34 +82,20 @@ pip install -r requirements.txt
 
 ## 📂 Network File Format  
 
-To run simulations, the network must be stored as a **plain text edge list** (`.txt`).  
+The simulator expects the network to be provided in a **plain text edge list** (`.txt`).  
 
-Each line represents an edge in the graph: `i j`, where `i` and `j` are integers representing node IDs.  
+### 📌 Rules  
+- Each line represents an edge: `i j` (two integers only).  
+- Nodes must be **1-indexed** (start at 1).  
+- Isolated nodes must appear as a self-loop: `i i`.  
+- No comments, no blank lines, no extra spaces.  
 
-### Indexing  
-By default, nodes should be **1-indexed** (start at 1).  
-Example: a graph with 3 nodes and edges `(1,2)` and `(2,3)` is written as:  
-`1 2`  
-`2 3`  
+### 📑 Example (`er1500-graph.txt`)  
 
-### Isolated nodes  
-To ensure all nodes are represented, isolated nodes must appear as a self-loop `(i i)`.  
-Example: if node 4 has no connections, include the line:  
-`4 4`  
-
-### Important  
-- No comments (`# ...`) or extra spaces.  
-- No empty lines.  
-- Each line must contain exactly two integers.  
-
-### ✅ Example of a valid network file (`er1500-graph.txt`)  
-`1 2`  
-`1 3`  
-`2 4`  
-`5 5`
-
-
-
+- `1 2` → edge between nodes 1 and 2  
+- `1 3` → edge between nodes 1 and 3  
+- `2 4` → edge between nodes 2 and 4  
+- `5 5` → isolated node 5 represented by a self-loop  
 
 ▶️ How to Run the Simulation
 ------------------------------

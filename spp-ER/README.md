@@ -33,10 +33,18 @@ git clone https://github.com/<your-username>/spp-ER.git
 cd spp-ER
 ```
 
+⚙️ Virtual Environment
+----------------------
+It is recommended to create a virtual environment before installing dependencies:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate   # On Linux/Mac
+.venv\Scripts\activate      # On Windows
+```
+
 ⚙️ Requirements
 ----------------
-- Python 3.9 or newer
-- Pip installed
 
 Install dependencies with:
 ```bash
@@ -45,7 +53,7 @@ pip install -r requirements.txt
 
 ▶️ How to Run the Simulation
 ------------------------------
-Run the simulation from the terminal by executing the main.py script with the following positional arguments:
+Run the simulation from the terminal **while inside the `spp-ER` directory** by executing the `main.py` script with the following positional arguments:
 
 ```bash
 python src/main.py N avg_k C num_iter num_instance

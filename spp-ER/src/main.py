@@ -76,11 +76,11 @@ def main(argc, argv):
 
             # Output results
             if C > 0:
-                dir_path = f"./spp-ER/notebook/data/N{N}/k{avg_k}/C{C}/"
+                dir_path = f"./notebook/data/N{N}/k{avg_k}/C{C}/"
                 file_id = i
                 file_name = f"{dir_path}full_data_{file_id}.csv"
             else:
-                dir_path = f"./spp-ER/notebook/data/N{N}/k{avg_k}/C{N}/"
+                dir_path = f"./notebook/data/N{N}/k{avg_k}/C{N}/"
                 file_id = i
                 file_name = f"{dir_path}full_data_{file_id}.csv"
 

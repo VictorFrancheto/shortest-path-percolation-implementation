@@ -10,9 +10,10 @@ This notebook implements a **quantum photonic network simulator** based on **Wax
 
 ## ▶️ Execution  
 The simulator runs for different network sizes: $300$, $500$, $600$, $1000$, $2000$, and $3000$ nodes.  
-The output is displayed as a 2x3 grid of subplots $(a, b, c, d, e, f)$, and saved as **quantum_networks.png** 🖼️💾.  
+The output is displayed as a $2x3$ grid of subplots $(a, b, c, d, e, f)$, and saved as **quantum_networks.png** 🖼️💾.  
 
 ✅ In summary: this notebook **implements the dynamics of quantum photonic networks** and **produces six comparative visualizations** with different numbers of nodes.  
+
 
 
 

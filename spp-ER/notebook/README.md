@@ -1,6 +1,5 @@
 # 📘 Shortest Path Percolation – ER Network (Notebook)
-
-=========
+------
 
 This directory contains the implementation of the **Shortest Path Percolation (SPP)** model applied to **Erdős–Rényi (ER)** networks.  
 Here, the network is fixed (generated according to the ER model), and only the network configurations and the **C** parameter (maximum allowed path cost) are editable.

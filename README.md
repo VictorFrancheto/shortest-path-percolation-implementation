@@ -15,7 +15,7 @@ The original **C implementation**, developed by the article’s authors, can be 
 - ⚙️ The [spp_general](https://github.com/VictorFrancheto/shortest-path-percolation-implementation/tree/main/spp_general) folder provides a more general and flexible version of the percolation model, and the results obtained from this dynamics and the corresponding attacks are presented in [2].
 
   - Networks: **fully customizable**; 
-  - Targeted attacks: **configurable** ;
+  - Targeted attacks: **configurable**;
   - Includes: **quantum network implementation** used in the analyses of article [2];
   - Adjustable parameters: network, targeted attack, and the percolation cost $C$;
   - A detailed step-by-step guide for execution and usage is available in the corresponding *README*.

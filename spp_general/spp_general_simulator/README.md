@@ -80,7 +80,7 @@ Activate it:
 pip install -r requirements.txt
 ```
 
-## 📡 Network File Format  
+## 🧩 Network File Format  
 
 The simulator expects the network to be provided in a **plain text edge list** (`.txt`).  
 

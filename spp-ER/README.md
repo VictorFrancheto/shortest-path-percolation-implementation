@@ -69,8 +69,8 @@ python src/main.py N avg_k C num_iter num_instance
 
 📌 Example
 ```bash
-python src/main.py 4096 8 1 50 1
-python src/main.py 1024 16 2 30 1
+python -m src.main 4096 8 1 50 1
+python -m src.main 1024 16 2 30 1
 ```
 
 🔍 What Happens When You Run It?

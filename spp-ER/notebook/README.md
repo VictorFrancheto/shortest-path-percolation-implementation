@@ -11,7 +11,7 @@ Here, the network is fixed (generated according to the ER model), and only the n
 .  
 ├── data                        # Results from executions using the simulator 
 ├── data_notebook               # Results from executions using the notebook
-├── README.md
+├── README.md                   # Readme file
 ├── plot-ER.ipynb               # Notebook for plotting the dynamics
 └── spp-ER.ipynb                # Notebook for shortest path percolation dynamics  
 ````

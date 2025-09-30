@@ -1,4 +1,4 @@
-# 🌐 Quantum & Percolation Simulators  
+# 🌐 Quantum Network & Percolation Simulators  
 
 📦 This repository gathers different implementations related to:  
 - **Quantum Networks**  
@@ -29,8 +29,3 @@ Each implementation is available in **two forms**:
 Folders with **`notebook`** in their name contain exactly the **same implementations** as the corresponding **`simulator`** folders.  
 - The purpose of the notebooks is to provide **didactic explanations and step-by-step demonstrations**.  
 - The simulators are recommended for **large-scale execution** and come with an **internal README containing detailed usage instructions**.  
-
----
-
-## 📜 License  
-This project is licensed under the MIT License.  

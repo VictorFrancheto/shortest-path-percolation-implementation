@@ -29,8 +29,7 @@ spp_general/
 │   ├── simulator.py          # High-level simulator orchestrating multiple iterations
 │   ├── unionfind.py          # Union-Find / Disjoint Set structure for component tracking
 │   ├── utils.py              # Helper functions (copying networks, cleaning timestamps, etc.)
-│
-├── network-save/             # Sample networks stored as edge list text files
+│   ├── network-save/             # Sample networks stored as edge list text files
 │   ├── er1500-graph.txt      # Erdős–Rényi graph with N=1500 nodes (edge list format)
 
 

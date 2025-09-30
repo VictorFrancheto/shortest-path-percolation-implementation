@@ -45,9 +45,6 @@ spp_general/
 ├── README.md                    # Root project documentation
 ├── requirements.txt             # Global dependencies (if needed)
 └── spp_diagram.png              # Diagram of the project/simulator
-
-
-
 ```
 
 📦 Setup Instructions

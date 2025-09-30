@@ -1,4 +1,4 @@
-# 🔗 Shortest Path Percolation – General Simulator
+# 🕸️ Shortest Path Percolation – General Simulator
 
 This repository contains simulation code for the **Shortest Path Percolation (SPP)** process on general networks. The goal is to explore percolation dynamics under different attack strategies and parameters:
 

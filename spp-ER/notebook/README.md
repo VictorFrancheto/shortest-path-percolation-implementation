@@ -1,4 +1,4 @@
-# 📘 Shortest Path Percolation – ER Network (Notebook)
+# 📘 Shortest Path Percolation – ER Network
 
 This directory contains the implementation of the **Shortest Path Percolation (SPP)** model applied to **Erdős–Rényi (ER)** networks.  
 Here, the network is fixed (generated according to the ER model), and only the network configurations and the **$C$** parameter (maximum allowed path cost) are editable.
@@ -11,9 +11,9 @@ Here, the network is fixed (generated according to the ER model), and only the n
 .  
 ├── data                        # Results from executions using the simulator 
 ├── data_notebook               # Results from executions using the notebook
+├── README.md
 ├── plot-ER.ipynb               # Notebook for plotting the dynamics
-├── spp-ER.ipynb                # Notebook for shortest path percolation dynamics  
-└── README.md
+└── spp-ER.ipynb                # Notebook for shortest path percolation dynamics  
 ````
 ---
 

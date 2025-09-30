@@ -85,10 +85,10 @@ pip install -r requirements.txt
 The simulator expects the network to be provided in a **plain text edge list** (`.txt`).  
 
 ### 📌 Rules  
-- Each line represents an edge: `i j` (two integers only).  
-- Nodes must be **1-indexed** (start at 1).  
-- Isolated nodes must appear as a self-loop: `i i`.  
-- No comments, no blank lines, no extra spaces.  
+- Each line represents an edge: `i j` (two integers only);
+- Nodes must be **1-indexed** (start at 1);
+- Isolated nodes must appear as a self-loop: `i i`;
+- No comments, no blank lines, no extra spaces;
 
 ### 📑 Example (`er1500-graph.txt`)  
 

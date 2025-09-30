@@ -7,12 +7,14 @@ Here, the network is fixed (generated according to the ER model), and only the n
 
 ## 📂 Structure
 
-- **data/** → Folder to store input/output files.  
-- **data_notebook/** → Auxiliary data for the notebooks.  
-- **plot-ER.ipynb** → Notebook for visualization and plotting of results.  
-- **spp-ER.ipynb** → Main implementation of the SPP dynamics in Python for ER networks.  
-- **README.md** → This documentation file.  
-
+```
+.  
+├── data                        # Results from executions using the simulator (CLI)   # Results from executions using notebooks  
+├── data_notebook               # Results from executions using the simulator (CLI)  
+├── plot-ER.ipynb               # Notebook for plotting the dynamics
+├── spp-ER.ipynb                # Notebook for general percolation dynamics  
+└── README.md
+````
 ---
 
 ## 🎯 Purpose

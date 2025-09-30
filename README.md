@@ -106,7 +106,6 @@ spp-ER/
 │
 ├── README.md                 # usage documentation
 ├── requirements.txt          # dependencies (pandas, numpy, etc.)
-├── setup.py                  # or pyproject.toml (for installation as a library)
-└── .gitignore
+├── setup.py               
 
 

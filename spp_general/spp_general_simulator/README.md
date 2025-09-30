@@ -2,9 +2,9 @@
 
 This repository contains simulation code for the **Shortest Path Percolation (SPP)** process on general networks. The goal is to explore percolation dynamics under different attack strategies and parameters:
 
-- 🧩 Network size ($N$)  
-- 🎯 Path-length cost parameter ($C$)  
-- ⚡ Attack modes (random, hub, closeness, betweenness and DomiRank)  
+- 🧩 Network size ($N$); 
+- 🎯 Path-length cost parameter ($C$);  
+- ⚡ Attack modes (random, hub, closeness, betweenness and DomiRank). 
 
 📁 Project Structure
 --------------------

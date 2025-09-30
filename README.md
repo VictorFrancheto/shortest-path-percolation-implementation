@@ -29,7 +29,8 @@ The original **C implementation**, developed by the article’s authors, can be 
 ---
 
 ### 🔄 Main Idea of the Dynamics 
-Shortest Path Percolation model: **$(a)$** Agent $t$ demands the origin and destination pair $o_t\to d_t$. There are two shortest paths of length $Q_t=4$, marked by blue dotted and red dashed edges. **$(b)$** If $C\ge4$, the agent selects one of these paths uniformly at random and removes all its edges. Here, the red dashed edges fragmenting the network into four components.
+Shortest Path Percolation model: **$(a)$** There are two possible shortest paths connecting the origin–destination pair $o_t \rightarrow d_t$ demanded by agent $t$. These paths are represented by orange dotted edges and purple dashed edges, both of length $Q_t = 4$. **$(b)$** If the maximum length allowed in the SPP model is $C \geq 4$, one of the two shortest paths is selected uniformly at random, and all of its edges are removed from the graph. In this example, the **purple dashed edges** are deleted, fragmenting the graph into four clusters.  
+
 
 <p align="center">
   <img src="https://github.com/VictorFrancheto/shortest-path-percolation-implementation/blob/main/spp_diagram.png">

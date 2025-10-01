@@ -102,7 +102,13 @@ spp-ER/
 │       └── network.py        # basic network functions
 │
 ├── tests/                    # unit tests
-│   └── test_utils.py
+│       ├── __init__.py       
+│       ├── test_main.py          
+│       ├── test_utils.py          
+│       ├── test_bfs.py            
+│       ├── test_removal.py        
+│       ├── test_tree.py           
+│       └── test_network.py        
 │
 ├── README.md                 # usage documentation
 ├── requirements.txt          # dependencies (pandas, numpy, etc.)

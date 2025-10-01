@@ -101,8 +101,7 @@ spp-ER/
 │       ├── tree.py           # tree and percolation functions
 │       └── network.py        # basic network functions
 │
-├── tests/                    # unit tests
-│       ├── __init__.py       
+├── tests/                    # unit tests  
 │       ├── test_main.py          
 │       ├── test_utils.py          
 │       ├── test_bfs.py            
@@ -112,7 +111,7 @@ spp-ER/
 │
 ├── README.md                 # usage documentation
 ├── requirements.txt          # dependencies (pandas, numpy, etc.)
-      
+
 ```
 
 -----

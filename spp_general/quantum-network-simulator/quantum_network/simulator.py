@@ -2,7 +2,7 @@ import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
 from scipy.stats import poisson
-plt.rcParams["text.usetex"] = False
+plt.rcParams["text.usetex"] = True
 
 
 class QuantumNetworkSimulator:

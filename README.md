@@ -96,7 +96,7 @@ shortest-path-percolation-implementation/
 ├── spp_general/                # general, fully customizable SPP model + quantum networks (see [2])
 │   ├── spp_general_simulator/    # CLI-ready SPP simulator (custom networks, targeted attacks)
 │   ├── spp-general-notebook/     # didactic notebook version
-│   ├── quantum-network-simulator/  # quantum network simulator used in [2]
+│   ├── quantum-network-simulator/  # quantum network simulator 
 │   ├── quantum-network-notebook/   # didactic notebook version
 │   └── README.md                 # overview and links to each sub-implementation
 │

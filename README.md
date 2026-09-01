@@ -30,7 +30,19 @@ The original **C implementation**, developed by the article’s authors, can be 
 
 ### 🔄 Main Idea of the Dynamics 
 
-Shortest Path Percolation model: **$(a)$** There are two possible shortest paths connecting the origin and destination pair $o_t \rightarrow d_t$ demanded by agent $t$. These paths are represented by red dotted edges and blue dashed edges, both of length $Q_t = 4$. **$(b)$** If the maximum length allowed in the SPP model is $C \geq 4$, one of the two shortest paths is selected uniformly at random, and all of its edges are removed from the graph. In this example, the **red dashed edges** are deleted, fragmenting the graph into four clusters.  
+Shortest Path Percolation model: **(a)** At time step $t$, an agent requests an origin--destination pair
+  $o_t \to d_t$. In the current network $\mathcal{G}_t$, there exist two
+  distinct shortest paths connecting $o_t$ and $d_t$, both with length
+  $Q_t=7$, highlighted in blue and red. In addition, a longer alternative
+  path with length $Q_t'=9$ is shown in magenta, representing a suboptimal
+  route.
+  **(b)** If the admissible threshold satisfies $C\geq 7$, the agent's demand
+  is fulfilled by randomly selecting one of the shortest paths, whose edges
+  are removed from the network to model resource consumption. In the
+  example, the red path is selected, and its removal fragments the network
+  into multiple disconnected components, illustrating how successive
+  shortest-path removals degrade global connectivity, even when longer
+  alternative routes remain available.
 
 
 <p align="center">

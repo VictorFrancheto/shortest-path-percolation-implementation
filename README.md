@@ -68,51 +68,30 @@ We explicitly refer to the *infinite*$-C$ *SPP model* when $\lim_{N \to \infty} 
 
 -----
 
-## ⚙️ Project Structure & How to Run
+## ⚙️ Project Structure
 
-Before getting started, let’s highlight an important point.
-Inside the `spp-ER` folder, you will find the Python implementation of the *Shortest Path Percolation* model presented in \[1].
-
-It contains two main subdirectories:
-
-📓 **Notebook** – here you will find examples to generate plots and a monolithic version of the code that runs the full dynamics.
-This folder was created for users who may not be familiar with running code via command line, making it easier to use in environments like Jupyter or Colab.
-
-📂 **src** – this folder contains the modular Python source code.
-To run it, just follow the instructions provided in the **README** file inside the main `spp-ER` directory.
-
-🚩 **Observation:** The folder structure of `spp-ER` is explicitly described below.
+This repository is organized as **two independent implementations**, each with its own detailed, self-contained README covering setup and usage:
 
 ```
-
-spp-ER/
+shortest-path-percolation-implementation/
 │
-├── notebook/                 # exploration notebooks
-│   ├── plot-ER.ipynb
-│   └── spp-ER.ipynb
+├── spp-ER/                    # SPP dynamics on Erdős–Rényi networks (see [1])
+│   ├── notebook/                # exploration notebooks (plots + monolithic dynamics)
+│   ├── src/                     # modular Python source code
+│   ├── tests/                   # unit tests
+│   └── README.md                # setup & usage instructions
 │
-├── src/
-│   └── spp_er/               # package name (better in snake_case)
-│       ├── __init__.py       # makes the directory a package
-│       ├── main.py           # entry point
-│       ├── utils.py          # utility functions
-│       ├── bfs.py            # bfs and related functions
-│       ├── removal.py        # pair removal functions
-│       ├── tree.py           # tree and percolation functions
-│       └── network.py        # basic network functions
+├── spp_general/                # general, fully customizable SPP model + quantum networks (see [2])
+│   ├── spp_general_simulator/    # CLI-ready SPP simulator (custom networks, targeted attacks)
+│   ├── spp-general-notebook/     # didactic notebook version
+│   ├── quantum-network-simulator/  # quantum network simulator used in [2]
+│   ├── quantum-network-notebook/   # didactic notebook version
+│   └── README.md                 # overview and links to each sub-implementation
 │
-├── tests/                    # unit tests  
-│       ├── test_main.py          
-│       ├── test_utils.py          
-│       ├── test_bfs.py            
-│       ├── test_removal.py        
-│       ├── test_tree.py           
-│       └── test_network.py        
-│
-├── README.md                 # usage documentation
-├── requirements.txt          # dependencies (pandas, numpy, etc.)
-
+└── README.md                   # this file
 ```
+
+🚩 **Observation:** For step-by-step setup and execution instructions, refer to the README inside each subfolder (`spp-ER/README.md`, `spp_general/README.md`, and the READMEs of the simulators nested within `spp_general/`).
 
 -----
 -----

@@ -105,5 +105,7 @@ shortest-path-percolation-implementation/
 
 🚩 **Observation:** For step-by-step setup and execution instructions, refer to the README inside each subfolder (`spp-ER/README.md`, `spp_general/README.md`, and the READMEs of the simulators nested within `spp_general/`).
 
+💬 **Questions**, **suggestions**, or **improvements**? Feel free to open an issue or get in touch. Feedback and contributions are always welcome!
+
 -----
 -----
